@@ -1,12 +1,24 @@
-#include<iostream>
-using namespace std;
-int main() {
-    float a,b,c;
-    cout<<"nhap so nguyen: ";
-    cin>>a;
-    cout<<"nhap tu: ";
-    cin>>b;
-    cout<<"nhap mau: ";
-    cin>>c;
-    cout<<"hon so la: "<<a<<" "<<b<<"/"<<c<<" = "<< ((a*c)/c) + (b/c);
+#include<stdio.h>
+#include<conio.h>
+
+struct HonSo {
+	int a,b,c;
+};
+void NhapHonSo(struct HonSo &s) {
+	printf("NHAP HON SO\n");   
+	printf("Nhap so nguyen: ");
+	scanf("%d",&s.a);
+	printf("Nhap tu: ");
+	scanf("%d",&s.b);
+    printf("nhap mau: ");
+    scanf("%d",&s.c);
 }
+void XuatHonSo(struct HonSo &s){
+	printf("%d %d/%d",s.a,s.b,s.c);   
+}
+int main() {
+	struct HonSo KQHS;
+	NhapHonSo(HS);
+	XuatHonSo(HS);
+	getch();
+}   
