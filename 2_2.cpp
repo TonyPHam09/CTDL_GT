@@ -1,6 +1,5 @@
-#include<iostream>
-
-using namespace std;
+#include<stdio.h>
+#include<math.h>
 
 int s(int n) {
     if (n==0)
@@ -11,7 +10,7 @@ int s(int n) {
 
 int main() {
     int n;
-    cout<<"nhap n: ";
-    cin>>n;
-    cout<<"ket qua: " << s(n);
+    printf("nhap n: ");
+    scanf("%d", &n);
+    printf("ket qua: %d",s(n));
 }
