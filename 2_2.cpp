@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h>
+#include<conio.h>
 
 int s(int n) {
     if (n==0)
@@ -13,4 +13,5 @@ int main() {
     printf("nhap n: ");
     scanf("%d", &n);
     printf("ket qua: %d",s(n));
+    getch();
 }
