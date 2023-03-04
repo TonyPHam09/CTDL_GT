@@ -17,7 +17,7 @@ void XuatHonSo(struct HonSo &s){
 	printf("%d %d/%d",s.a,s.b,s.c);   
 }
 int main() {
-	struct HonSo KQHS;
+	struct HonSo HS;
 	NhapHonSo(HS);
 	XuatHonSo(HS);
 	getch();
